@@ -8,9 +8,10 @@ function takeInputs()
 
 function validate()
 {
+    takeInputs();
     let flag = false;
     var languages = document.getElementsByName('language');
-    alert("Total Length : " + languages.length);
+    //alert("Total Length : " + languages.length);
 
     /*for (let i = 0; i< languages.length; i++)
     {
@@ -28,6 +29,7 @@ function validate()
     if(flag === false)
     {
         alert("please select at least one language");
+        return false;
     }
 
     //-----------------------------------------
