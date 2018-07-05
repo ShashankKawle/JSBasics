@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #ignitor
+        {
+            box-shadow: 2px 2px 2px blue;
+        }
+    </style>
+</head>
+<body>
+    <h1> Simple Examples</h1><hr>
+
+    <input type="button" value="Click Me" onclick="document.getElementById('para2').innerHTML = Date()"/>
+
+    <br><br>
+    <p id="para2"></p>
+
+    Javascript can also be used to apply css at certain <br><br>
+
+    <input type="button" onmouseover="hover();" onmouseleave="leave()" onclick="changeImage()" id="ignitor" value="Change image"/>
+    <img src="images/chilling%20boy.jpg" alt="chilling boy" id="display" width="200" height="200"/>
+
+    <script>
+        var i = 1;
+        function hover()
+        {
+            document.getElementById('ignitor').style.boxShadow = "none";
+        }
+        function leave()
+        {
+            document.getElementById('ignitor').style.boxShadow = "2px 2px 2px blue";
+        }
+        function changeImage()
+        {
+            if(i === 1)
+            {
+                document.getElementById('display').src = "images/weird%20pencil.jpg";
+                i=0;
+            }
+            else
+            {
+                document.getElementById('display').src = "images/chilling%20boy.jpg";
+                i=1;
+            }
+        }
+    </script>
+</body>
+</html>

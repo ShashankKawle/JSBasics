@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Elements</title>
+</head>
+<body>
+<h1>Register here...</h1>
+    <br>
+    <div style="background-color:#ededed;box-shadow: 2px 2px gray; padding: 25px; margin: 5%">
+        <form action="#" method="post" name="reg-form">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your full name." name="username" required autofocus/>
+            &nbsp
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password." name="password" pattern="^(*[a-zA-z0-9])[@][a-z]$" title="Your password should be contain @ in between your remaining contents." required autofocus/>
+            <br><br>
+
+            <label>Date of Birth</label>
+            <input type="date" name="username" required />
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="Radio" name="Gender"  value="0"  checked/>Male
+            <input type="Radio" name="Gender" value="1" />Female
+            <br><br>
+
+            <label>Place of Birth:</label>
+            <select name="Place" required>
+                <option value="">--Select--</option>
+                <option value="I">India</option>
+                <option value="U">UK</option>
+                <option value="US">USA</option>
+            </select>
+            <br><br>
+
+            <label>Email</label>
+            <input type="email" placeholder="you@host.com" name="email">
+            <br><br>
+
+            <lable>Profile Url:</lable>
+            <input type="url" name="profile">
+            <br><br>
+
+            <label>Resume</label>
+            <input type="file" name="resume" >
+            <br><br>
+
+            <label>Favourite Color</label>
+            <input type="color" name="color" >
+            <br><br>
+
+            <label>Budget Range:</label>
+            <input type="range" name="range" value="600" multiple="100" min="100" max="999" step="100">
+            <br><br>
+
+            <label>Contact no.</label>
+            <input type="text"  name="contact" maxlength="6">
+            <br><br>
+
+            <label>Quantity :</label>
+            <input type="number"  name="quantity" max="6" min="1" value="1">
+            <br><br>
+
+            <label>Language:</label>
+            <input type="checkbox"  name="language" required>English
+            <input type="checkbox"  name="language">Hindi
+            <br>
+            <br>
+
+            <label>Comments :</label><br>
+            <textarea rows="10" cols="50" placeholder="Type your text here" name="comments"></textarea>
+            <br><br>
+
+            <input type="checkbox" required> I accept terms & Conditions.
+            <br><br>
+            <input type="submit"/>&nbsp<input type="reset">
+        </form>
+    </div>
+    <br>
+    <hr>
+    <h1>Other Elements</h1>
+    <hr>
+
+    <label>Google drive storage:</label>
+    <meter value="3" min="1" max="10">30%</meter>
+    <br>
+
+    <label>Your Order Status:</label>
+    <progress value="45" max="100"></progress>
+
+    <label>Time</label>
+    <p>Your order will reach at <time>10.00</time>p.m.</p>
+</body>
+</html>

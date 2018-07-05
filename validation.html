@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        .hilight
+        {
+            box-shadow: 5px 5px 5px grey;
+            padding: 10px;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="#" method="post" onsubmit="return validate()">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" onfocus="changeTheme(this)" onblur="changeTheme(this)">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" onfocus="changeTheme(this)" onblur="changeTheme(this)">
+            <br><br>
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" name="confirmation" id="cpassword"  onfocus="changeTheme(this)" onblur="changeTheme(this)">
+            <span id="error" style="color: red"></span>
+            <br><br>
+            <label>Language</label><br>
+            <input type="checkbox" name="language"  value="1">English &nbsp
+            <input type="checkbox" name="language"  value="2">Marathi &nbsp
+            <input type="checkbox" name="language"  value="3">Hindi<br>
+            <br><br>
+            <input type="Submit" value="Send">&nbsp
+            <input type="reset" value="Reset">
+        </form>
+
+    </div>
+    <script src="scripts/validator.js"></script>
+</body>
+</html>

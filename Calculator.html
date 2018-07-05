@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging the calculator</title>
+    <style>
+        input
+        {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+    <h1 style="text-align: center;color: blue;font-size: 18px; font-family: 'Segoe UI'">
+        Calculator Form
+    </h1>
+    <hr>
+    <section style="font-size: 15px;font-family: 'Segoe UI Light'">
+            <label>Enter First No.</label>
+            <input type="text" id="num1" size="10"/>
+            <br><br>
+
+            <label>Enter Second No.</label>
+            <input type="text" id="num2" size="10"/>
+            <br><br>
+
+            <input type="button" value="Add" onclick="Add()"/>&nbsp
+            <input type="button" value="Substract" onclick="Substract()"/>&nbsp
+            <input type="button" value="Multiple" onclick="Multiply()"/>&nbsp
+            <input type="button" value="Divide" onclick="Divide()"/>&nbsp
+
+    </section>
+
+    <br><br><br>
+    <h3>Result:</h3> <br>
+    <span id="display">0.0</span>
+
+    <script src="scripts/calculator.js"></script>
+</body>
+</html>
