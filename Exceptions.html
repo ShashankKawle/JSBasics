@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        /*alert('Hello from alert box');
+        if(confirm('Do you want to continue?'))
+        {
+            alert('OK CLICKED');
+        }
+        else
+        {
+            alert('F***K OFF');
+        }
+        console.log(prompt('Enter your name','Type your name here'));*/
+
+        // ###########################  ERROR  ###########################################################
+
+        // Custom Exception
+        function divisionError(message)
+        {
+            this.name = 'Division Error';
+            this.message = message;
+        }
+
+
+        let num1 = parseInt(prompt('Enter 1st no',1));
+        let num2 = parseInt(prompt('Enter 2nd no.',1));
+
+        function test(num1,num2)
+        {
+            try
+            {
+                // alert(greet()); <-- REFERENCE ERROR
+                // alert(x); <-- REFERENCE ERROR
+                //num1.toUpperCase();  <-- TYPE ERROR
+
+                if(num2 === 0)
+                {
+                    /*throw {
+                        name:"DIVISION ERROR !!!",
+                        message: "2nd no cannot be zero"
+                    };*/
+
+
+                    throw new divisionError('2nd no cannot be zero');
+                }
+
+
+                var result = num1 / num2;
+                alert("Result of division : " + result);
+                return 0;
+            }
+            catch(e)
+            {
+                alert(e.name + " - " + e.message);
+            }
+            finally
+            {
+                alert('This Always Execute');
+            }
+        }
+
+        console.log(test(3,2));
+
+    </script>
+</body>
+</html>

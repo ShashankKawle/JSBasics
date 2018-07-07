@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="Open new window" onclick="window.open()"/>
+    <input type="button" value="Close new window" onclick="window.close()"/>
+    <br><br>
+    <input type="button" value="Open" onclick="location.assign('http://www.google.com')"/>
+    In new tab -->
+    <input type="button" value="Open" onclick="window.open(location.assign('http://www.google.com'))"/>
+
+    <br><br>
+
+    Browser History
+    <input type="button" value="Back" onclick="history.back()"/>
+    <input type="button" value="Forwarsd" onclick="history.forward()">
+
+
+
+
+    <script>
+
+        /*Window is the object that all the browser supports.
+        It represents the browser window.
+        All global variables and functions automatically become members of window object.
+        Global variables become properties of window object.
+        Global functions become methods of window object.*/
+
+
+        // RREPRESENT BROWSER WIDTH AND HEIGHT
+        console.log(window.innerWidth);
+        console.log(window.innerHeight);
+
+        // window.location object
+        // window.location.href --> Returns url of current window
+        console.log(location.href);
+        // returns HOST name
+        console.log(location.hostname);
+        // returns PROTOCOL
+        console.log(location.protocol);
+        // returns PATH of file and NAME of the CURRENT page
+        console.log(location.pathname);
+        //returns PORT NUMBER
+        console.log(location.port);
+
+        //location.assign() --> To open new Document
+
+        // window bject is having history object which contains browser history.
+        // window object has a navigator which contains information about client browser.
+
+        /*console.log(navigator.appCodeName);
+        console.log(navigator.appName); // RETURNS APPLICATION NAME
+        console.log(navigator.appVersion); // RETURNS BROWSER VERSION
+        console.log(navigator.language);
+        console.log(navigator.cookieEnabled);
+        console.log(navigator.platform);
+        console.log(navigator.onLine);
+        console.log(navigator.javaEnabled());*/
+
+</script>
+
+</body>
+</html>

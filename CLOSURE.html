@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    /*// Function Expression
+    let add = function sum(a,b)
+    {
+        return a+b;
+    };
+    console.log(add(2,3));
+
+    // Anonymous function
+    let sub = function (a,b)
+    {
+        return a-b;
+    }
+    console.log(sub(5,4));
+
+    // Nested functions
+    function outer(a,b)
+    {
+        let c = "hi";
+
+        function inner()
+        {
+            return a+b;
+        };
+
+        console.log(inner());
+    }
+
+    outer(2,6);*/
+
+    // ######################################### CLOSURE #############################################
+
+    /*let counter = 0;
+    function increment()
+    {
+        return ++counter;
+    }
+
+    for (let i = 0; i < 10; i++)
+    {
+        console.log(increment());
+    }*/
+
+    // counter variable is global and is not secure
+
+    function increment()
+    {
+        var counter = 0;
+
+        function inner()
+        {
+            return counter++;
+        }
+
+        return inner;
+    }
+
+    let inc = increment();
+
+    for (let i = 0; i < 10; i++)
+    {
+        console.log(inc());
+    }
+
+
+</script>
+</body>
+</html>

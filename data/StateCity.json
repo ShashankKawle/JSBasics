@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "state":"Maharashtra",
+      "city":["Mumbai","Mumbai Sub.","Thane","Navi-Mumbai"]
+    },
+    {
+      "state":"Rajasthan",
+      "city":["Jaipur","Jaisalmer","Udaypur"]
+    },
+    {
+      "state":"GOT",
+      "city":["winterfell","kings Landing","Dragon Stone"]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        function BankAccount(accId, accHolderName, accType, balance)
+        {
+            this.accId = accId;
+            this.accHolderName = accHolderName;
+            this.accType = accType;
+            this.balance = balance;
+
+            /*this.withdraw = function (amount)
+            {
+                if(this.balance > amount)
+                {
+                    this.balance = this.balance - amount;
+                    console.log("OPERATION SUCCESSFUL");
+                }
+                else
+                {
+                    console.log("Insufficient Balance");
+                }
+            }
+            this.deposit = function(amount)
+            {
+                this.balance += amount;
+                console.log("OPERATION SUCCESSFUL");
+            }
+            this.printDetails = function ()
+            {
+                console.log(this.accId + " " + this.accHolderName + " " + this.accType + " " + this.balance + " ");
+            }*/
+        }
+
+        let b1 = new BankAccount(123, 'abc' , 'a1' , 5000);
+        let b2 = new BankAccount(123, 'xyz' , 'a1' , 8000);
+
+        // THERE ARE TWO PROBLEMS
+        // 1. need to maintain single copy of constructor
+        // 2. Every function should be available to object
+
+        BankAccount.prototype.bankName = 'KOTAK MAHENDRA BANK';
+
+        BankAccount.prototype.withdraw = function (amount)
+        {
+            if(this.balance > amount)
+            {
+                this.balance = this.balance - amount;
+                console.log("OPERATION SUCCESSFUL");
+            }
+            else
+            {
+                console.log("Insufficient Balance");
+            }
+        }
+
+        BankAccount.prototype.deposit = function(amount)
+        {
+            this.balance += amount;
+            console.log("OPERATION SUCCESSFUL");
+        }
+
+        BankAccount.prototype.printDetails = function ()
+        {
+            console.log(this.accId + " " + this.accHolderName + " " + this.accType + " " + this.balance + " ");
+        }
+
+        BankAccount.prototype.getBalance = function ()
+        {
+            console.log(this.balance);
+        }
+
+        console.log(BankAccount.prototype);
+
+        let b3 = new BankAccount(123,'asdfaf', 'sf' , 5000);
+        console.log(b3);
+
+        // We cannot add property directly as a parameter to the constructor in prototype.
+
+
+        // ############################  INHERITANCE  ######################################
+
+        function  SavingBankAccount(accId, accHolderName, balance, salaryAccount)
+        {
+            BankAccount.call(this, accId, accHolderName, "Saving", balance);
+            this.salaryAccount = salaryAccount;
+            this.MIN_BALANCE = 10000;
+        }
+
+        // Adding inheritance to SavingBankAccount
+        // To access all the methods of BankAccount
+        SavingBankAccount.prototype = Object.create(BankAccount.prototype);
+
+        // To add constructor of SavingBankAccount
+        SavingBankAccount.prototype.constructor = SavingBankAccount;
+
+        //Override withdraw method
+        SavingBankAccount.prototype.withdraw = function (amount)
+        {
+            if(this.salaryAccount)
+            {
+                if(amount > this.balance)
+                {
+                    this.balance -= amount;
+                    console.log(" OPERATION SUCCESSFUL");
+                }
+                else
+                {
+                    console.log("NOT ENOUGH BALANCE");
+                }
+            }
+            else
+            {
+                if(this.balance - amount >= this.MIN_BALANCE)
+                {
+                    this.balance -= amount;
+                    console.log(" OPERATION SUCCESSFUL");
+                }
+                else
+                {
+                    console.log("You will have to maintain min balance of 100000");
+                }
+            }
+        }
+
+        let sb = new SavingBankAccount(101, 'afafasf', 777777, false);
+        sb.withdraw(600000);
+    </script>
+</body>
+</html>

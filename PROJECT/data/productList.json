@@ -1,0 +1,46 @@
+{
+  "products":[
+    {
+      "name" : "samsung x22",
+      "parent":"samsung",
+      "model":"x22",
+      "imgurl":"images/img1.jpg",
+      "specs":{
+        "processor":"Qualcom snapdragon 999",
+        "ram":"4GB",
+        "rom":"32GB",
+        "duos":"Yes",
+        "speed":"1.7Ghz",
+        "support":"Yes"
+        }
+    },
+    {
+      "name" : "Apple iPhone 9",
+      "parent":"Apple",
+      "model":"iPhone 9",
+      "imgurl":"images/img2.jpg",
+      "specs":{
+        "processor":"Apple Bioscope 999",
+        "ram":"2GB",
+        "rom":"16GB",
+        "duos":"Yes",
+        "speed":"2.0Ghz",
+        "support":"Yes"
+      }
+    },
+    {
+      "name" : "Honor xtj007",
+      "parent":"Honor",
+      "model":"xtj007",
+      "imgurl":"images/img3.jpg",
+      "specs":{
+        "processor":"Qualcom snapdragon 999",
+        "ram":"4GB",
+        "rom":"1TB",
+        "duos":"Yes",
+        "speed":"1.2Ghz",
+        "support":"Yes"
+      }
+    }
+  ]
+}

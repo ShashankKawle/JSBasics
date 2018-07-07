@@ -1,19 +1,20 @@
+
 function CallZiptastic(zipcode)
 {
     let url = 'http://ziptasticapi.com/'+zipcode;
     let xmlhttprequest = new XMLHttpRequest();
-    xmlhttprequest.onreadystatechange = updateCode(xmlhttprequest.response);
+    xmlhttprequest.onload = function(){updateCode(this);};
     xmlhttprequest.open('GET', url ,true);
     xmlhttprequest.send();
 }
 
-function updateCode(res)
+function updateCode(req)
 {
-    if(res.readyState == 4 && (res.status >= 200 && res.status < 400))
+    if(req.readyState == 4 && (req.status >= 200 && req.status < 400))
     {
-        let json = JSON.parse(res.text);
-        document.getElementById('country').innerHTML = json.country;
-        document.getElementById('city').innerHTML = json.city;
-        document.getElementById('state').innerHTML = json.state;
+        let j = JSON.parse(req.responseText);
+        document.getElementById('country').innerHTML = j.country;
+        document.getElementById('city').innerHTML = j.city;
+        document.getElementById('state').innerHTML = j.state;
     }
 }

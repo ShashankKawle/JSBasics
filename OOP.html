@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        // TYPES TO CREATE OBJECTS
+
+        //--------------------------------------------------------------------------------------------------------------
+
+        // TYPE 1
+
+        /*let person = {
+            firstName:"Shashank",
+            id:1314,
+            designation:"CEO",
+            salary:99999999,
+            experience:0,
+
+            printDetails()
+            {
+                console.log(this.firstName + " having ID = " + this.id + " is " + this.designation + " of this company with salary " + this.salary);
+            }
+        }
+
+        person.printDetails();
+        console.log(person);*/
+
+        //--------------------------------------------------------------------------------------------------------------
+
+
+        // TYPE 2
+
+        /*function Employee(id,firstname,designation,salary,experience)
+        {
+            this.id = id,
+            this.firstname = firstname,
+            this.designation = designation,
+            this.salary = salary,
+            this.experience = experience,
+            this.print = function ()
+            {
+                console.log(this.firstName + " having ID = " + this.id + " is " + this.designation + " of this company with salary " + this.salary);
+            }
+        }
+
+        let Employee1 = new Employee(132,"shashank",'CEO',99999999,0);
+        Employee1.print();*/
+
+
+        //--------------------------------------------------------------------------------------------------------------
+
+
+
+        // TYPE 3
+
+        let employee = new Object();
+            //Adding properties to an empty object
+        employee.id = 102;
+        employee.firstname = "shashank";
+        employee.designation = "CEO";
+        employee.salary = 999999999;
+        employee.experience = 0;
+
+
+
+        employee.print = function ()
+        {
+            console.log(this.firstname + " having ID = " + this.id + " is " + this.designation + " of this company with salary " + this.salary);
+        }
+
+        employee.print();
+
+
+        //--------------------------------------------------------------------------------------------------------------
+
+
+
+        // TYPE 4
+            // To create comy from exhisting object
+        let obj = Object.create(employee);
+        console.log(obj);
+
+    </script>
+</head>
+</html>
