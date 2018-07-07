@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b9c9bf-77c2-48d4-becb-42dfdc82c661" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/CLOSURE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/City Auto Complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT/data/productList.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT/display.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT/scripts/displayData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT/scripts/mobile store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/browserObjectModel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/StateCity.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/employee.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/StateCity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeePortal.html" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeePortal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Ziptastic API Caller Ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Ziptastic API Caller Ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/employees.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/employees.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REGEX.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/regex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browserObjectModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/browserObjectModel.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,16 +22,37 @@
         <entry file="file://$PROJECT_DIR$/Exceptions.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="449">
-              <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+              <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="browserObjectModel.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="browserObjectModel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/browserObjectModel.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="509">
-              <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="REGEX.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/REGEX.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="regex.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/regex.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +63,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -123,6 +129,8 @@
         <option value="$PROJECT_DIR$/CLOSURE.html" />
         <option value="$PROJECT_DIR$/Exceptions.html" />
         <option value="$PROJECT_DIR$/browserObjectModel.html" />
+        <option value="$PROJECT_DIR$/REGEX.html" />
+        <option value="$PROJECT_DIR$/scripts/regex.js" />
       </list>
     </option>
   </component>
@@ -154,6 +162,11 @@
             <path>
               <item name="Javascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="Javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Javascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,12 +218,12 @@
       <workItem from="1530846777776" duration="15395000" />
       <workItem from="1530868014544" duration="441000" />
       <workItem from="1530869193827" duration="8783000" />
-      <workItem from="1530935387962" duration="3392000" />
+      <workItem from="1530935387962" duration="7531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87880000" />
+    <option name="totallyTimeSpent" value="92019000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -284,6 +297,7 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="BEK_SORT_TYPE" value="1" />
               <option name="RECENTLY_FILTERED_USER_GROUPS">
                 <collection />
               </option>
@@ -318,20 +332,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/Main Style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Images.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -634,14 +634,31 @@
     <entry file="file://$PROJECT_DIR$/Exceptions.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
-          <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/browserObjectModel.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
-          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/REGEX.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/regex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
